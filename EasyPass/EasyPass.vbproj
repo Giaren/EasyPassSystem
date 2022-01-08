@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71E51738-30C6-43AF-84A8-980D3BE3F9E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>EasyPass.My.MyApplication</StartupObject>
+    <RootNamespace>EasyPass</RootNamespace>
+    <AssemblyName>EasyPass</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>EasyPass.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>EasyPass.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddToll.Designer.vb">
+      <DependentUpon>AddToll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddToll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatorLogin.Designer.vb">
+      <DependentUpon>CreatorLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreatorLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerInformation.Designer.vb">
+      <DependentUpon>CustomerInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerLogin.Designer.vb">
+      <DependentUpon>CustomerLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerRegister.Designer.vb">
+      <DependentUpon>CustomerRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerRevenue.Designer.vb">
+      <DependentUpon>CustomerRevenue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerRevenue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersAccount.Designer.vb">
+      <DependentUpon>CustomersAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerUpdating.Designer.vb">
+      <DependentUpon>CustomerUpdating.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerUpdating.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReturnedTags.Designer.vb">
+      <DependentUpon>ReturnedTags.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnedTags.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchemeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchemeDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Search.Designer.vb">
+      <DependentUpon>Search.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TagInventory.Designer.vb">
+      <DependentUpon>TagInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TagInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toll Revenue.Designer.vb">
+      <DependentUpon>Toll Revenue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Toll Revenue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TollProcedure.Designer.vb">
+      <DependentUpon>TollProcedure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TollProcedure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionsRecord.Designer.vb">
+      <DependentUpon>TransactionsRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionsRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTolls.Designer.vb">
+      <DependentUpon>UpdateTolls.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTolls.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddToll.resx">
+      <DependentUpon>AddToll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatorLogin.resx">
+      <DependentUpon>CreatorLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerInformation.resx">
+      <DependentUpon>CustomerInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerLogin.resx">
+      <DependentUpon>CustomerLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerRegister.resx">
+      <DependentUpon>CustomerRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerRevenue.resx">
+      <DependentUpon>CustomerRevenue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersAccount.resx">
+      <DependentUpon>CustomersAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerUpdating.resx">
+      <DependentUpon>CustomerUpdating.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnedTags.resx">
+      <DependentUpon>ReturnedTags.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TagInventory.resx">
+      <DependentUpon>TagInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toll Revenue.resx">
+      <DependentUpon>Toll Revenue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TollProcedure.resx">
+      <DependentUpon>TollProcedure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionsRecord.resx">
+      <DependentUpon>TransactionsRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTolls.resx">
+      <DependentUpon>UpdateTolls.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="SchemeDataSet.xsc">
+      <DependentUpon>SchemeDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SchemeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchemeDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SchemeDataSet.xss">
+      <DependentUpon>SchemeDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scheme.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scheme_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>Scheme.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
